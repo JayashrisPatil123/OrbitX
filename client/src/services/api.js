@@ -1,8 +1,8 @@
-const API_URL = "https://orbitx-f8aw.onrender.com";
+const API_URL = "https://orbitx-server.onrender.com";
 
 export async function searchSatellite(name) {
   const response = await fetch(
-    `${BASE_URL}/search?name=${encodeURIComponent(name)}`
+    `${API_URL}/search?name=${encodeURIComponent(name)}`
   );
 
   if (!response.ok) {
